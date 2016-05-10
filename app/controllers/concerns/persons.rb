@@ -9,7 +9,7 @@ class Person
 	end
     
     def introduce()
-        %Q{ Person's name is #{@name} and age is #{@age}}
+        %Q{ Person's name is #{@name} and age #{@age}}
     end
     
     def birth_year()
@@ -25,7 +25,7 @@ class Person
         introudction = introduce()
         birth_year_is = birth_year()
         nick_name_is = nick_name()
-        %Q{ #{introudction} - Birth Year is #{birth_year_is} and Nick name is #{nick_name_is}}
+        %Q{ #{introudction} - Birth year #{birth_year_is} and Nick name #{nick_name_is}}
     end
 
 end
