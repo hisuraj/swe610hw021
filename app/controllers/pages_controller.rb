@@ -5,10 +5,10 @@ class PagesController < ApplicationController
   end
 
   def stringify
-    name_entered = params[:name]
-    adj_entered = params[:adjective]
-    @text = %Q{ Your name #{name_entered} is so #{adj_entered}}
-    @text = "You are nothing!" if name_entered.blank? || adj_entered.blank?
+    vala_entered = params[:name]
+    valb_entered = params[:adjective]
+    @text = %Q{ Your name #{vala_entered} is so #{valb_entered}}
+    @text = "You are nothing!" if vala_entered.blank? || valb_entered.blank?
   end
 
   def age
